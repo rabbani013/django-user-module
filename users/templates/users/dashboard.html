@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4 col-md-10 col-sm-12 login-container vertical-center-div horizontal-center-div">
+			<div class="pd-rltb-50">
+				<label class="confirmation_window_text">Hello, {{ user.username|default:'Guest' }}! Welcome to your dashboard!</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
